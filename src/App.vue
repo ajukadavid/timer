@@ -4,9 +4,20 @@
 </script>
 
 <template>
-  
+  <div class="container">
+
+  </div>
 </template>
 
 <style>
+body {
+  margin: 0;
 
+}
+.container {
+  height: 100vh;
+  background-image: url("@/assets/bg-timer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
