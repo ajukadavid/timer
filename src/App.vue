@@ -19,5 +19,6 @@ body {
   background-image: url("@/assets/bg-timer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 </style>
