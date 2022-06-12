@@ -8,6 +8,10 @@
 <div class="title">
   New Year Count Down
   </div>
+  <div class="timer">
+    <div>12</div>
+    <div>Months</div>
+  </div>
 </div>
 </template>
 
