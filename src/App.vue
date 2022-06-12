@@ -1,6 +1,9 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+
+import Timer from '@/components/Timer.vue'
+
 </script>
 
 <template>
@@ -9,8 +12,10 @@
   New Year Count Down
   </div>
   <div class="timer">
-    <div>12</div>
-    <div>Months</div>
+    <Timer label="Days"/>
+    <Timer label="Hours"/>
+    <Timer label="Minutes"/>
+    <Timer label="Seconds"/>
   </div>
 </div>
 </template>
@@ -34,5 +39,10 @@ body {
   font-size: 5rem;
   font-weight: bold;
 
+}
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 </style>
