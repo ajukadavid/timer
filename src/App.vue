@@ -15,7 +15,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 body {
   margin: 0;
-
+  font-family: 'Merriweather', serif;
+  font-family:'Roboto Slab', serif;
 }
 .container {
   height: 100vh;
@@ -23,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  color: #627e8a
+  text-align: center;
 }
 .title {
   font-size: 5rem;
