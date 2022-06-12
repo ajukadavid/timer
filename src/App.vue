@@ -5,8 +5,10 @@
 
 <template>
   <div class="container">
-
+<div class="title">
+  New Year Count Down
   </div>
+</div>
 </template>
 
 <style>
@@ -21,5 +23,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  color: #627e8a
+}
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+
 }
 </style>
