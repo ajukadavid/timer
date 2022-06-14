@@ -3,7 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 
 import Timer from '@/components/Timer.vue'
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const newYears = "1 Jan 2023"
 const remainingDays = ref("")
@@ -23,8 +23,17 @@ const hours = Math.floor(totalSeconds / 3600 ) % 24
 const mins = Math.floor(totalSeconds / 60) % 60
 const seconds = Math.floor(totalSeconds) % 60
 
+// remainingDays.value = days.toString()
+
+console.log(days, hours, mins, seconds)
+
 }
 
+let timeInterval : ReturnType<typeof setInterval>
+
+onMounted(() => {
+  setInterval(countDown, 1000)
+})
 </script>
 
 <template>
